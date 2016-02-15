@@ -1,5 +1,5 @@
 :title: CLI Workshop
-:author: Amy Boyle and Rachel Kelly
+:author: Amy Boyle
 :description: Intro to Command Line and Python Setup
 :css: css/cli.css
 
@@ -29,35 +29,33 @@ Nerdcred++
 :data-scale: 1
 :data-x: r2200
 
-About Us
+whoami?
 ========
 
-| **Amy Boyle** ------------------ **Rachel Kelly**
-
-.. image:: img/brain.jpg
-    :width: 300px
-
-.. image:: img/puppet_logo.png
+.. image:: img/NewRelic-logo-square.png
     :width: 300px
 
 ---------------------------------------------------------------------------
 
-:id: fan-girls
+Why are we doing this?
+======================
 
-.. image:: img/pyladies.jpg
-    :width: 600px
-
-Python fan girls.
-
----------------------------------------------------------------------------
-
-.. image:: img/confused_puppy.jpg
-    :width: 600px
+* Faster and more flexible than finder
+* Better understanding of your computer and software development
+* Some programs only have CLI interface
+* Often expected for jobs
 
 ---------------------------------------------------------------------------
 
-.. image:: img/relaxed_puppy.jpg
+CLI == Command Line == Terminal == Shell
+
+---------------------------------------------------------------------------
+
+.. image:: img/desktop_pup.jpg
     :width: 600px
+
+.. note::
+    To the command line!
 
 ---------------------------------------------------------------------------
 
@@ -89,8 +87,44 @@ Cheat Sheet
 | :code:`cat` <file>  :  output file contents
 | :code:`head` <file>  :  get first lines in file
 | :code:`tail` <file>  :  get last lines in file
-| :code:`grep` <pattern> <file>  :  find pattern in file
-| :code:`find` <start dir> <options>  :  locate files in system
+
+---------------------------------------------------------------------------
+
+:id: command-not-found
+
+:data-scale: 1
+
+.. image:: img/not_amused_puppy.png
+    :width: 70%
+
+.. code::
+
+    python : command not found ?
+
+---------------------------------------------------------------------------
+
+:id: set-path
+
+Update your PATH
+================
+
+Code to customize your terminal lives in the file .bash_profile in your home folder. If it does not exist you can create it. This is a plain text file that you can add to using any text editor.
+
+Any commands that you can run interactively at the terminal command prompt can be put in here, to be executed each time the terminal is opened.
+
+Directories, not specific files should be added to the path. When a command is entered on the command line, bash will search all of the directories on the path for that command (program).
+
+To add to your path use:
+
+.. code::
+
+    PATH="$PATH:/path/to/new/folder"
+
+E.g. for python 3.5, using Git-Bash on windows add:
+
+.. code::
+
+    PATH="$PATH:/c/Python35:/c/Python35/Scripts"
 
 ---------------------------------------------------------------------------
 
